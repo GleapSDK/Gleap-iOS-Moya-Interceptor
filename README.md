@@ -13,7 +13,9 @@ Now you need to paste the following package URL to the search bar in the top rig
 
 Package URL:
 
-```https://github.com/GleapSDK/Gleap-iOS-Moya-Plugin```
+```
+https://github.com/GleapSDK/Gleap-iOS-Moya-Plugin
+```
 
 Now select the Gleap package and hit *Add package* to add the Gleap SDK to your project.
 
