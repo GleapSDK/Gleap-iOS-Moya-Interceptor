@@ -12,6 +12,7 @@ To get started, open your Xcode project and select *File* > *Add packages...*
 Now you need to paste the following package URL to the search bar in the top right corner. Hit enter to confirm the search.
 
 Package URL:
+
 ```https://github.com/GleapSDK/Gleap-iOS-Moya-Plugin```
 
 Now select the Gleap package and hit *Add package* to add the Gleap SDK to your project.
