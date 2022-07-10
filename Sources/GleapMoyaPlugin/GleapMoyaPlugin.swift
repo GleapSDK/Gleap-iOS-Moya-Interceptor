@@ -66,9 +66,15 @@ private extension GleapMoyaPlugin {
         responseContent["status"] = response.response?.statusCode ?? 0
         
         // Set response http headers
+        var responseHeaders = [String: String]()
         if let httpHeaders = response.response?.allHeaderFields {
-            responseContent["headers"] = httpHeaders
+          for (key, value) in httpHeaders {
+            if let stringValue = value as? String, let keyString = key as? String {
+              responseHeaders[keyString] = stringValue
+            }
+          }
         }
+        responseContent["headers"] = responseHeaders
         
         responseContent["payload"] = getPayload(data: response.data, contentType: contentType)
         
